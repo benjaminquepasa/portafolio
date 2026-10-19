@@ -1,6 +1,7 @@
 /* Variables y Estilos Base */
 :root {
     --primary-color: #6366f1;
+    --primary-hover: #4f46e5;
     --text-color: #1f2937;
     --bg-color: #ffffff;
     --bg-light: #f9fafb;
@@ -110,11 +111,34 @@ body {
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    transition: opacity 0.3s;
+    transition: background 0.3s;
 }
 
 .btn:hover {
-    opacity: 0.9;
+    background: var(--primary-hover);
+}
+
+.project-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
 }
 
 /* Secciones Generales */
@@ -184,6 +208,9 @@ body {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -192,12 +219,15 @@ body {
 
 .card img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 250px;
 }
 
 .card-body {
     padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-body h4 {
@@ -210,13 +240,18 @@ body {
     margin-bottom: 15px;
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 .tags span {
     background: var(--bg-light);
     border: 1px solid var(--border-color);
     padding: 4px 8px;
     font-size: 0.75rem;
     border-radius: 4px;
-    margin-right: 5px;
 }
 
 /* Footer */

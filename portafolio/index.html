@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio de Programación</title>
+    <title>Mi Portafolio de Programación | Proyectos Destacados</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -26,8 +26,8 @@
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h2>Hola, soy <span class="highlight">Benjamin Troncoso</span></h2>
-                <p>Estudiante de programación y desarrollador web junior. Este es mi recorrido construyendo soluciones con código.</p>
+                <h2>Hola, soy <span class="highlight">Tu Nombre</span></h2>
+                <p>Estudiante de programación y desarrollador web. Aquí presento mi recorrido construyendo soluciones tecnológicas con impacto educativo, social y ambiental.</p>
                 <a href="#proyectos" class="btn">Ver Proyectos</a>
             </div>
             <div class="hero-image">
@@ -40,7 +40,7 @@
     <section id="sobre-mi" class="section">
         <div class="container">
             <h3 class="section-title">Sobre mí</h3>
-            <p class="section-desc">Me apasiona la tecnología y cómo la programación permite transformar ideas en realidades digitales. He aprendido de forma autodidacta y a través de proyectos prácticos usando Visual Studio Code.</p>
+            <p class="section-desc">Me apasiona transformar ideas en herramientas digitales funcionales usando Visual Studio Code. A lo largo de mi formación he desarrollado plataformas de orientación escolar, mapas de reciclaje comunal y sistemas robóticos de asistencia accesible.</p>
         </div>
     </section>
 
@@ -50,14 +50,19 @@
             <h3 class="section-title">Mi Recorrido</h3>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h4>Primeros Pasos en HTML y CSS</h4>
-                    <span class="date">2025</span>
-                    <p>Aprendí la estructura base de la web, selectores, Flexbox y Grid mediante la creación de páginas estáticas simples.</p>
+                    <h4>Fundamentos de Programación y Desarrollo Web</h4>
+                    <span class="date">Inicios</span>
+                    <p>Aprendizaje de HTML, CSS puro, maquetación responsiva y control de versiones mediante Git y GitHub.</p>
                 </div>
                 <div class="timeline-item">
-                    <h4>Proyectos Reales y Git</h4>
-                    <span class="date">2026 - Presente</span>
-                    <p>Desarrollo de aplicaciones completas, uso de Git/GitHub para control de versiones y perfeccionamiento en VS Code.</p>
+                    <h4>Desarrollo de Soluciones Web (AcademyMap y Green Link)</h4>
+                    <span class="date">Fase de Crecimiento</span>
+                    <p>Creación de interfaces interactivas orientadas a resolver problemáticas reales: orientación vocacional para estudiantes de enseñanza media y gestión comunitaria de reciclaje en Santiago.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Innovación y Robótica Aplicada (Proyecto GutenVox)</h4>
+                    <span class="date">Actualidad / Feria TP</span>
+                    <p>Desarrollo técnico de un robot de lectura, traducción automática y asistencia audible basado en Raspberry Pi, Python, OCR y APIs en la nube.</p>
                 </div>
             </div>
         </div>
@@ -66,20 +71,55 @@
     <!-- Sección Proyectos -->
     <section id="proyectos" class="section">
         <div class="container">
-            <h3 class="section-title">Mis Proyectos</h3>
+            <h3 class="section-title">Mis Proyectos Destacados</h3>
             <div class="projects-grid">
+                
+                <!-- Proyecto 1: AcademyMap -->
                 <div class="card">
-                    <img src="assets/images/proyecto1.jpg" alt="Proyecto 1">
+                    <img src="assets/images/academymap.jpg" alt="AcademyMap">
                     <div class="card-body">
-                        <h4>Landing Page Responsiva</h4>
-                        <p>Página web moderna construida con HTML y CSS puro adaptable a dispositivos móviles.</p>
+                        <h4>AcademyMap</h4>
+                        <p>Plataforma web interactiva con un sistema de quest diseñada para orientar a estudiantes de octavo básico y primero medio a encontrar liceos alineados con sus gustos e intereses.</p>
                         <div class="tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Quest Educativo</span>
                         </div>
                     </div>
                 </div>
-                <!-- Puedes duplicar esta tarjeta para más proyectos -->
+
+                <!-- Proyecto 2: Green Link -->
+                <div class="card">
+                    <img src="assets/images/greenlink.jpg" alt="Green Link">
+                    <div class="card-body">
+                        <h4>Green Link</h4>
+                        <p>Sitio web interactivo enfocado en mostrar de forma visual y accesible los puntos verdes de reciclaje disponibles en varias comunas de Santiago, Chile.</p>
+                        <div class="tags">
+                            <span>Frontend</span>
+                            <span>Sustentabilidad</span>
+                            <span>Santiago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: GutenVox -->
+                <div class="card">
+                    <img src="assets/images/gutenvox.jpg" alt="GutenVox">
+                    <div class="card-body">
+                        <h4>GutenVox (Robot de Lectura y Traducción)</h4>
+                        <p>Robot de asistencia accesible (ODS 4 y 10) que escanea textos impresos, los traduce mediante DeepL API y los reproduce de forma audible con síntesis de voz. Incluye interfaz web de control remoto.</p>
+                        <div class="tags">
+                            <span>Python / OCR</span>
+                            <span>Raspberry Pi</span>
+                            <span>DeepL API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://benjaminquepasa.github.io/sitio-web/" target="_blank" class="btn-outline">Sitio Web</a>
+                            <a href="https://github.com/ArsuPlayer/GutenVox_Web" target="_blank" class="btn-outline">GitHub Beta</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -88,7 +128,7 @@
     <section id="contacto" class="section bg-light">
         <div class="container text-center">
             <h3 class="section-title">¡Hablemos!</h3>
-            <p>¿Tienes un proyecto en mente o quieres contactarme? Escríbeme a mi correo o redes sociales.</p>
+            <p>¿Tienes alguna consulta sobre mis proyectos o quieres colaborar? Escríbeme un mensaje.</p>
             <a href="mailto:tu-correo@example.com" class="btn">Enviar Correo</a>
         </div>
     </section>
