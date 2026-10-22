@@ -12,7 +12,7 @@
     --border-hover: #334155;
 }
 
-*, *::before, *::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -157,9 +157,9 @@ body {
 }
 
 .project-links {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
-    gap: 12px;
+    gap: 10px;
 }
 
 .btn-outline {
@@ -179,6 +179,27 @@ body {
     border-color: var(--primary-color);
     background: var(--accent-glow);
     transform: translateY(-2px);
+}
+
+/* Botón de Información para Modal */
+.btn-info {
+    width: 100%;
+    background: var(--bg-light);
+    border: 1px solid var(--border-hover);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-info:hover {
+    background: var(--accent-glow);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* Secciones Generales */
@@ -287,6 +308,7 @@ body {
 .card img {
     width: 100%;
     height: 220px;
+    object-fit: cover;
     border-bottom: 1px solid var(--border-color);
     transition: transform 0.5s ease;
 }
@@ -320,7 +342,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .tags span {
@@ -331,6 +353,78 @@ body {
     font-size: 0.78rem;
     font-weight: 500;
     border-radius: 6px;
+}
+
+/* Ventana Emergente (Modal) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 2000;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border-hover);
+    padding: 35px;
+    border-radius: 16px;
+    max-width: 550px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-container {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--text-color);
+}
+
+.modal-container h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.modal-container p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
 /* Footer */
@@ -363,3 +457,4 @@ body {
         display: none; 
     }
 }
+

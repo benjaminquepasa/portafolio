@@ -80,12 +80,15 @@
                     <div class="card-body">
                         <div>
                             <h4>AcademyMap</h4>
-                            <p>Plataforma web interactiva con un sistema de quest diseñada para orientar a estudiantes de octavo básico y primero medio a encontrar liceos alineados con sus gustos e intereses.</p>
+                            <p>Plataforma web interactiva con un sistema de quest diseñada para orientar a estudiantes de octavo básico y primero medio...</p>
                         </div>
-                        <div class="tags">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
-                            <span>Quest Educativo</span>
+                        <div>
+                            <div class="tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>Quest Educativo</span>
+                            </div>
+                            <button class="btn-info" onclick="openModal('AcademyMap', 'AcademyMap es una plataforma web interactiva desarrollada para facilitar la transición de los estudiantes de educación básica a la enseñanza media. Utiliza un sistema de misiones (quests) gamificado para que los jóvenes descubran sus habilidades y los establecimientos técnico-profesionales que mejor se adapten a su perfil vocacional e intereses personales.', 'HTML/CSS, JavaScript, Quest Educativo')">Más Información</button>
                         </div>
                     </div>
                 </div>
@@ -96,12 +99,15 @@
                     <div class="card-body">
                         <div>
                             <h4>Green Link</h4>
-                            <p>Sitio web interactivo enfocado en mostrar de forma visual y accesible los puntos verdes de reciclaje disponibles en varias comunas de Santiago, Chile.</p>
+                            <p>Sitio web interactivo enfocado en mostrar de forma visual y accesible los puntos verdes de reciclaje...</p>
                         </div>
-                        <div class="tags">
-                            <span>Frontend</span>
-                            <span>Sustentabilidad</span>
-                            <span>Santiago</span>
+                        <div>
+                            <div class="tags">
+                                <span>Frontend</span>
+                                <span>Sustentabilidad</span>
+                                <span>Santiago</span>
+                            </div>
+                            <button class="btn-info" onclick="openModal('Green Link', 'Green Link es una solución web enfocada en la sustentabilidad urbana en Santiago de Chile. Su objetivo principal es conectar de forma rápida y visual a los ciudadanos con los puntos limpios, contenedores y centros de reciclaje disponibles en distintas comunas, promoviendo la gestión ambiental comunitaria.', 'Frontend, Sustentabilidad, Santiago')">Más Información</button>
                         </div>
                     </div>
                 </div>
@@ -111,8 +117,8 @@
                     <img src="assets/images/gutenvox.jpg" alt="GutenVox">
                     <div class="card-body">
                         <div>
-                            <h4>GutenVox (Robot de Lectura y Traducción)</h4>
-                            <p>Robot de asistencia accesible (ODS 4 y 10) que escanea textos impresos, los traduce mediante DeepL API y los reproduce de forma audible con síntesis de voz. Incluye interfaz web de control remoto.</p>
+                            <h4>GutenVox (Robot de Lectura)</h4>
+                            <p>Robot de asistencia accesible (ODS 4 y 10) que escanea textos impresos, los traduce mediante DeepL API...</p>
                         </div>
                         <div>
                             <div class="tags">
@@ -120,7 +126,8 @@
                                 <span>Raspberry Pi</span>
                                 <span>DeepL API</span>
                             </div>
-                            <div class="project-links">
+                            <button class="btn-info" onclick="openModal('GutenVox (Robot de Lectura y Traducción)', 'GutenVox es un proyecto avanzado de innovación tecnológica y robótica aplicada alineado con los Objetivos de Desarrollo Sostenible (ODS 4: Educación de Calidad y ODS 10: Reducción de las Desigualdades). El dispositivo está construido sobre Raspberry Pi con una cámara para escaneo OCR, procesamiento de texto en Python, traducción dinámica a través de DeepL API y síntesis de voz audible. Además, incluye una interfaz web integrada para el control y gestión remota.', 'Python / OCR, Raspberry Pi, DeepL API')">Más Información</button>
+                            <div class="project-links" style="margin-top: 10px;">
                                 <a href="https://benjaminquepasa.github.io/sitio-web/" target="_blank" class="btn-outline">Sitio Web</a>
                                 <a href="https://github.com/ArsuPlayer/GutenVox_Web" target="_blank" class="btn-outline">GitHub Beta</a>
                             </div>
@@ -132,15 +139,25 @@
         </div>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="section bg-light">
-        <div class="container text-center">
-            <h3 class="section-title">¡Hablemos!</h3>
-            <p class="section-desc">¿Tienes alguna consulta sobre mis proyectos o quieres colaborar? Escríbeme un mensaje.</p>
-            <br>
-            <a href="mailto:tu-correo@example.com" class="btn">Enviar Correo</a>
+    <!-- Ventana Emergente (Modal) -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3 id="modal-title">Título del Proyecto</h3>
+            <p id="modal-desc">Información detallada...</p>
+            <div id="modal-tags" class="tags"></div>
         </div>
-    </section>
+    </div>
+
+    <!-- Sección Contacto -->
+<section id="contacto" class="section bg-light">
+    <div class="container text-center">
+        <h3 class="section-title">¡Hablemos!</h3>
+        <p class="section-desc">¿Tienes alguna consulta sobre mis proyectos o quieres colaborar? Escríbeme un mensaje.</p>
+        <br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tu-correo@example.com" target="_blank" class="btn">Enviar Correo</a>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
