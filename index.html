@@ -1,171 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Troncoso | Portafolio de Programación</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio | Benjamin Troncoso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Portafolio</a>
+    <nav aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Header / Barra de Navegación -->
-    <header class="header">
-        <div class="container nav-container">
-            <h1 class="logo"><span>Portafolio</span></h1>
-            <nav class="nav">
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#trayectoria">Trayectoria</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div>
+        <h1>Hola, soy <span class="grad">Benjamin Troncoso</span></h1>
+        <p>Estudiante de programación y desarrollador web. Aquí presento mi recorrido construyendo soluciones tecnológicas con impacto educativo, social y ambiental.</p>
+        <div class="btns">
+          <a class="btn" href="#proyectos">Ver Proyectos</a>
         </div>
-    </header>
-
-    <!-- Sección Hero / Presentación -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h2>Hola, soy <span class="highlight">Benjamin Troncoso</span></h2>
-                <p>Estudiante de programación y desarrollador web. Aquí presento mi recorrido construyendo soluciones tecnológicas con impacto educativo, social y ambiental.</p>
-                <a href="#proyectos" class="btn">Ver Proyectos</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/avatar.png" alt="Foto de perfil">
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Sobre Mí -->
-    <section id="sobre-mi" class="section">
-        <div class="container">
-            <h3 class="section-title">Sobre mí</h3>
-            <p class="section-desc">Me gusta la programación, crear mis propios proyectos y hacer realidad mis propias ideas. Me gustaría llevar estas ideas a la robótica y ampliar mi visión con la automatización.</p>
-        </div>
-    </section>
-
-    <!-- Sección Trayectoria -->
-    <section id="trayectoria" class="section bg-light">
-        <div class="container">
-            <h3 class="section-title">Mi Recorrido</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h4>Fundamentos de Programación y Desarrollo Web</h4>
-                    <span class="date">Inicios</span>
-                    <p>Aprendizaje de HTML, CSS puro, maquetación responsiva.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Desarrollo de Soluciones Web (AcademyMap y Green Link)</h4>
-                    <span class="date">Fase de Crecimiento</span>
-                    <p>Creación de interfaces interactivas orientadas a resolver problemáticas reales: orientación vocacional para estudiantes de enseñanza media y gestión comunitaria de reciclaje en Santiago.</p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Innovación y Robótica Aplicada (Proyecto GutenVox)</h4>
-                    <span class="date">Actualidad / Feria TP</span>
-                    <p>Desarrollo técnico de un robot de lectura, traducción automática y asistencia audible basado en Raspberry Pi, Python, OCR y APIs en la nube.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Proyectos -->
-    <section id="proyectos" class="section">
-        <div class="container">
-            <h3 class="section-title">Mis Proyectos Destacados</h3>
-            <div class="projects-grid">
-                
-                <!-- Proyecto 1: AcademyMap -->
-                <div class="card">
-                    <img src="images/academymap.jpg" alt="AcademyMap">
-                    <div class="card-body">
-                        <div>
-                            <h4>AcademyMap</h4>
-                            <p>Plataforma web interactiva con un sistema de quest diseñada para orientar a estudiantes de octavo básico y primero medio...</p>
-                        </div>
-                        <div>
-                            <div class="tags">
-                                <span>HTML/CSS</span>
-                                <span>JavaScript</span>
-                                <span>Quest Educativo</span>
-                            </div>
-                            <button class="btn-info" onclick="openModal('AcademyMap', 'AcademyMap es una plataforma web interactiva desarrollada para facilitar la transición de los estudiantes de educación básica a la enseñanza media. Utiliza un sistema de misiones (quests) gamificado para que los jóvenes descubran sus habilidades y los establecimientos técnico-profesionales que mejor se adapten a su perfil vocacional e intereses personales.', 'HTML/CSS, JavaScript, Quest Educativo')">Más Información</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 2: Green Link -->
-                <div class="card">
-                    <img src="images/greenlink.jpg" alt="Green Link">
-                    <div class="card-body">
-                        <div>
-                            <h4>Green Link</h4>
-                            <p>Sitio web interactivo enfocado en mostrar de forma visual y accesible los puntos verdes de reciclaje...</p>
-                        </div>
-                        <div>
-                            <div class="tags">
-                                <span>Frontend</span>
-                                <span>Sustentabilidad</span>
-                                <span>Santiago</span>
-                            </div>
-                            <button class="btn-info" onclick="openModal('Green Link', 'Green Link es una solución web enfocada en la sustentabilidad urbana en Santiago de Chile. Su objetivo principal es conectar de forma rápida y visual a los ciudadanos con los puntos limpios, contenedores y centros de reciclaje disponibles en distintas comunas, promoviendo la gestión ambiental comunitaria.', 'Frontend, Sustentabilidad, Santiago')">Más Información</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3: GutenVox -->
-                <div class="card">
-                    <img src="images/gutenvox.jpg" alt="GutenVox">
-                    <div class="card-body">
-                        <div>
-                            <h4>GutenVox (Robot de Lectura)</h4>
-                            <p>Robot de asistencia accesible (ODS 4 y 10) que escanea textos impresos, los traduce mediante DeepL API...</p>
-                        </div>
-                        <div>
-                            <div class="tags">
-                                <span>Python / OCR</span>
-                                <span>Raspberry Pi</span>
-                                <span>DeepL API</span>
-                            </div>
-                            <button class="btn-info" onclick="openModal('GutenVox (Robot de Lectura y Traducción)', 'GutenVox es un proyecto avanzado de innovación tecnológica y robótica aplicada alineado con los Objetivos de Desarrollo Sostenible (ODS 4: Educación de Calidad y ODS 10: Reducción de las Desigualdades). El dispositivo está construido sobre Raspberry Pi con una cámara para escaneo OCR, procesamiento de texto en Python, traducción dinámica a través de DeepL API y síntesis de voz audible. Además, incluye una interfaz web integrada para el control y gestión remota.', 'Python / OCR, Raspberry Pi, DeepL API')">Más Información</button>
-                            <div class="project-links" style="margin-top: 10px;">
-                                <a href="https://benjaminquepasa.github.io/sitio-web/" target="_blank" class="btn-outline">Sitio Web</a>
-                                <a href="https://github.com/ArsuPlayer/GutenVox_Web" target="_blank" class="btn-outline">GitHub Beta</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Ventana Emergente (Modal) -->
-    <div id="project-modal" class="modal-overlay">
-        <div class="modal-container">
-            <button class="modal-close" onclick="closeModal()">&times;</button>
-            <h3 id="modal-title">Título del Proyecto</h3>
-            <p id="modal-desc">Información detallada...</p>
-            <div id="modal-tags" class="tags"></div>
-        </div>
+      </div>
+      <img class="photo" src="images/foto.jpg" alt="Retrato de Benjamin Troncoso" width="280" height="280">
     </div>
+  </section>
 
-    <!-- Sección Contacto -->
-<section id="contacto" class="section bg-light">
-    <div class="container text-center">
-        <h3 class="section-title">¡Hablemos!</h3>
-        <p class="section-desc">¿Tienes alguna consulta sobre mis proyectos o quieres colaborar? Escríbeme un mensaje.</p>
-        <br>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tu-correo@example.com" target="_blank" class="btn">Enviar Correo</a>
+  <section id="sobre-mi">
+    <div class="wrap about">
+      <div>
+        <p class="eyebrow">Sobre mí</p>
+        <h2>¿Quién soy?</h2>
+      </div>
+      <div>
+        <p>Me gusta la <strong>programación</strong>, crear mis propios proyectos y hacer realidad mis propias ideas. Me gustaría llevar estas ideas a la <strong>robótica</strong> y ampliar mi visión con la <strong>automatización</strong>.</p>
+        <ul class="focus">
+          <li><span>Estudio</span><span>Programación</span></li>
+          <li><span>Hago</span><span>Desarrollo web</span></li>
+          <li><span>Quiero llegar a</span><span>Robótica y automatización</span></li>
+        </ul>
+      </div>
     </div>
-</section>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Benjamin Troncoso. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+  <section class="alt" id="trayectoria">
+    <div class="wrap">
+      <p class="eyebrow">Trayectoria</p>
+      <h2>Mi recorrido</h2>
+      <div class="steps">
+        <article class="step">
+          <div class="when">Inicios</div>
+          <div>
+            <h3>Fundamentos de Programación y Desarrollo Web</h3>
+            <p>Aprendizaje de HTML, CSS puro, maquetación responsiva.</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="when">Fase de crecimiento</div>
+          <div>
+            <h3>Desarrollo de Soluciones Web (AcademyMap y Green Link)</h3>
+            <p>Creación de interfaces interactivas orientadas a resolver problemáticas reales: orientación vocacional para estudiantes de enseñanza media y gestión comunitaria de reciclaje en Santiago.</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="when">Actualidad / Feria TP</div>
+          <div>
+            <h3>Innovación y Robótica Aplicada (Proyecto GutenVox)</h3>
+            <p>Desarrollo técnico de un robot de lectura, traducción automática y asistencia audible basado en Raspberry Pi, Python, OCR y APIs en la nube.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
+  <section id="proyectos">
+    <div class="wrap">
+      <p class="eyebrow">Proyectos</p>
+      <h2>Mis proyectos destacados</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/academymap.svg" alt="Logo de AcademyMap: una brújula blanca sobre fondo violeta" width="396" height="264">
+          <div class="body">
+            <h3>AcademyMap</h3>
+            <p class="desc">Plataforma web interactiva con un sistema de quest diseñada para orientar a estudiantes de octavo básico y primero medio.</p>
+            <ul class="tags"><li>HTML/CSS</li><li>JavaScript</li><li>Quest educativo</li></ul>
+            <button class="more" type="button" aria-expanded="false" aria-controls="d1">Más información</button>
+            <p class="detail" id="d1" hidden>Interfaz interactiva de orientación vocacional para estudiantes de enseñanza media.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/greenlink.jpg" alt="Logo de Green Link: un globo terráqueo rodeado de flechas verdes de reciclaje" width="396" height="264">
+          <div class="body">
+            <h3>Green Link</h3>
+            <p class="desc">Sitio web interactivo enfocado en mostrar de forma visual y accesible los puntos verdes de reciclaje en Santiago.</p>
+            <ul class="tags"><li>Frontend</li><li>Sustentabilidad</li><li>Santiago</li></ul>
+            <button class="more" type="button" aria-expanded="false" aria-controls="d2">Más información</button>
+            <p class="detail" id="d2" hidden>Gestión comunitaria de reciclaje en Santiago, con una interfaz pensada para encontrar puntos verdes con facilidad.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/gutenvox.jpg" alt="Logo de GutenVox: un libro dentro de un cubo con ícono de traducción y sonido" width="396" height="264">
+          <div class="body">
+            <h3>GutenVox (Robot de Lectura)</h3>
+            <p class="desc">Robot de asistencia accesible (ODS 4 y 10) que escanea textos impresos, los traduce mediante DeepL API y los lee en voz alta.</p>
+            <ul class="tags"><li>Python / OCR</li><li>Raspberry Pi</li><li>DeepL API</li></ul>
+            <button class="more" type="button" aria-expanded="false" aria-controls="d3">Más información</button>
+            <p class="detail" id="d3" hidden>Robot de lectura, traducción automática y asistencia audible basado en Raspberry Pi, Python, OCR y APIs en la nube. Proyecto de la Feria TP.</p>
+            <div class="links">
+              <a href="#" rel="noopener">Sitio web</a>
+              <a href="#" rel="noopener">GitHub Beta</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt contact" id="contacto">
+    <div class="wrap">
+      <p class="eyebrow">Contacto</p>
+      <h2>¡Hablemos!</h2>
+      <p>¿Tienes alguna consulta sobre mis proyectos o quieres colaborar? Escríbeme un mensaje.</p>
+      <a class="btn" href="mailto:tu-correo@ejemplo.com">Enviar correo</a>
+      <div class="mail">tu-correo@ejemplo.com</div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Benjamin Troncoso. Todos los derechos reservados.</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
