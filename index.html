@@ -1,307 +1,393 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Benjamin Troncoso | Desarrollador Web</title>
-  <meta name="description" content="Portafolio de Benjamin Troncoso, estudiante de programación y desarrollador web. Proyectos en HTML, CSS, JavaScript y Python, y robótica aplicada.">
+  <meta name="description"
+    content="Portafolio de Benjamin Troncoso, estudiante de programación y desarrollador web. Proyectos en HTML, CSS, JavaScript y Python, y robótica aplicada.">
   <meta property="og:title" content="Benjamin Troncoso | Desarrollador Web">
-  <meta property="og:description" content="Estudiante de programación y desarrollador web. Proyectos con impacto educativo, social y ambiental.">
+  <meta property="og:description"
+    content="Estudiante de programación y desarrollador web. Proyectos con impacto educativo, social y ambiental.">
   <meta name="theme-color" content="#0a0e1a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="#inicio">Benjamin Troncoso</a>
-    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-    <nav id="menu" aria-label="Principal">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#trayectoria">Trayectoria</a>
-      <a href="#formacion">Formación</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <!-- INICIO -->
-  <section class="hero" id="inicio">
+  <header class="top">
     <div class="wrap">
-      <div>
-        <p class="estado"><span class="punto" aria-hidden="true"></span>Abierto a oportunidades laborales</p>
-        <h1>Hola, soy <span class="grad">Benjamin Troncoso</span></h1>
-        <p class="rol">Estudiante de programación y desarrollador web</p>
-        <p class="intro">Aquí presento mi recorrido construyendo soluciones tecnológicas con impacto educativo, social y ambiental.</p>
-        <div class="btns">
-          <a class="btn" href="#proyectos">Ver proyectos</a>
-          <a class="btn btn-ghost" href="#contacto">Contactarme</a>
-        </div>
-        <dl class="datos">
-          <div><dt>Ubicación</dt><dd>Chile</dd></div>
-          <div><dt>Especialidad</dt><dd>Desarrollo web y Python</dd></div>
-          <div><dt>Próximo objetivo</dt><dd>Automatizacion y Robotica</dd></div>
-        </dl>
-      </div>
-      <img class="photo" src="images/avatar.jpeg" alt="Retrato de Benjamin Troncoso" width="280" height="280">
+      <a class="brand" href="#inicio">Benjamin Troncoso</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+      <nav id="menu" aria-label="Principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#formacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- SOBRE MÍ -->
-  <section id="sobre-mi">
-    <div class="wrap about">
-      <div>
-        <p class="eyebrow">Sobre mí</p>
-        <h2>¿Quién soy?</h2>
-      </div>
-      <div>
-        <p>Me gusta la <strong>programación</strong>, crear mis propios proyectos y hacer realidad mis propias ideas. Me gustaría llevar estas ideas a la <strong>robótica</strong> y ampliar mi visión con la <strong>automatización</strong>.</p>
-        <p>Busco una oportunidad para aplicar lo que sé en un equipo real, seguir aprendiendo y aportar con soluciones útiles.</p>
-        <ul class="focus">
-          <li><span>Estudio</span><span>Programación</span></li>
-          <li><span>Hago</span><span>Desarrollo web</span></li>
-          <li><span>Quiero llegar a</span><span>Automatizacion y Robotica</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- HABILIDADES -->
-  <section class="alt" id="habilidades">
-    <div class="wrap">
-      <p class="eyebrow">Habilidades</p>
-      <h2>Lo que sé hacer y dónde lo usé</h2>
-      <div class="steps">
-
-        <div class="skill-group">
-          <h3>Desarrollo web</h3>
-          <ul class="skills">
-            <li>
-              <span class="s-name">HTML</span>
-              <span class="s-desc">Estructura semántica de páginas y sitios.</span>
-              <ul class="tags"><li>AcademyMap</li><li>Green Link</li></ul>
-            </li>
-            <li>
-              <span class="s-name">CSS</span>
-              <span class="s-desc">Maquetación responsiva y diseño de interfaces.</span>
-              <ul class="tags"><li>AcademyMap</li><li>Green Link</li></ul>
-            </li>
-            <li>
-              <span class="s-name">JavaScript</span>
-              <span class="s-desc">Interactividad y lógica en el navegador.</span>
-              <ul class="tags"><li>AcademyMap</li></ul>
-            </li>
-            <!-- AGREGA MÁS: copia un bloque <li>…</li> y cambia el texto -->
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3>Programación y robótica</h3>
-          <ul class="skills">
-            <li>
-              <span class="s-name">Python</span>
-              <span class="s-desc">Lógica del robot: lectura de texto, traducción y audio.</span>
-              <ul class="tags"><li>GutenVox</li></ul>
-            </li>
-            <li>
-              <span class="s-name">OCR</span>
-              <span class="s-desc">Reconocimiento de texto en documentos impresos.</span>
-              <ul class="tags"><li>GutenVox</li></ul>
-            </li>
-            <li>
-              <span class="s-name">Raspberry Pi</span>
-              <span class="s-desc">Computador de placa única que controla el robot.</span>
-              <ul class="tags"><li>GutenVox</li></ul>
-            </li>
-            <li>
-              <span class="s-name">APIs en la nube</span>
-              <span class="s-desc">Traducción automática con DeepL API.</span>
-              <ul class="tags"><li>GutenVox</li></ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3>Herramientas</h3>
-          <ul class="skills">
-            <li>
-              <span class="s-name">GitHub</span>
-              <span class="s-desc">Repositorio y versiones del proyecto GutenVox.</span>
-              <ul class="tags"><li>GutenVox</li></ul>
-            </li>
-            <li>
-              <span class="s-name">Visual Studio Code</span>
-              <span class="s-desc">Editor que uso para desarrollar mis proyectos.</span>
-              <ul class="tags"><li>Uso diario</li></ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3>Siguiente objetivo</h3>
-          <ul class="skills">
-            <li>
-              <span class="s-name">Robótica y automatización</span>
-              <span class="s-desc">Llevar mis ideas al mundo físico y automatizar procesos.</span>
-              <ul class="tags"><li>En aprendizaje</li></ul>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TRAYECTORIA -->
-  <section id="trayectoria">
-    <div class="wrap">
-      <p class="eyebrow">Trayectoria</p>
-      <h2>Mi camino en la programación</h2>
-      <div class="steps">
-        <article class="step">
-          <div class="when">Inicios</div>
-          <div>
-            <h3>Fundamentos de Programación y Desarrollo Web</h3>
-            <p>Aprendizaje de HTML, CSS puro, maquetación responsiva.</p>
-            <ul class="tags"><li>HTML</li><li>CSS</li><li>Diseño responsivo</li></ul>
+  <main>
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div>
+          <p class="estado"><span class="punto" aria-hidden="true"></span>Abierto a oportunidades laborales</p>
+          <h1>Hola, soy <span class="grad">Benjamin Troncoso</span></h1>
+          <p class="rol">Estudiante de programación y desarrollador web</p>
+          <p class="intro">Aquí presento mi recorrido construyendo soluciones tecnológicas con impacto educativo, social
+            y ambiental.</p>
+          <div class="btns">
+            <a class="btn" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-ghost" href="#contacto">Contactarme</a>
           </div>
-        </article>
-        <article class="step">
-          <div class="when">Fase de crecimiento</div>
-          <div>
-            <h3>Desarrollo de Soluciones Web (AcademyMap y Green Link)</h3>
-            <p>Creación de interfaces interactivas orientadas a resolver problemáticas reales: orientación vocacional para estudiantes de enseñanza media y gestión comunitaria de reciclaje en Santiago.</p>
-            <ul class="tags"><li>JavaScript</li><li>Interfaces interactivas</li><li>Resolución de problemas reales</li></ul>
+          <dl class="datos">
+            <div>
+              <dt>Ubicación</dt>
+              <dd>Chile</dd>
+            </div>
+            <div>
+              <dt>Especialidad</dt>
+              <dd>Desarrollo web y Python</dd>
+            </div>
+            <div>
+              <dt>Próximo objetivo</dt>
+              <dd>Automatizacion y Robotica</dd>
+            </div>
+          </dl>
+        </div>
+        <img class="photo" src="images/avatar.jpeg" alt="Retrato de Benjamin Troncoso" width="280" height="280">
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow">Sobre mí</p>
+          <h2>¿Quién soy?</h2>
+        </div>
+        <div>
+          <p>Me gusta la <strong>programación</strong>, crear mis propios proyectos y hacer realidad mis propias ideas.
+            Me gustaría llevar estas ideas a la <strong>robótica</strong> y ampliar mi visión con la
+            <strong>automatización</strong>.</p>
+          <p>Busco una oportunidad para aplicar lo que sé en un equipo real, seguir aprendiendo y aportar con soluciones
+            útiles.</p>
+          <ul class="focus">
+            <li><span>Estudio</span><span>Programación</span></li>
+            <li><span>Hago</span><span>Desarrollo web</span></li>
+            <li><span>Quiero llegar a</span><span>Automatizacion y Robotica</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="alt" id="habilidades">
+      <div class="wrap">
+        <p class="eyebrow">Habilidades</p>
+        <h2>Lo que sé hacer y dónde lo usé</h2>
+        <div class="steps">
+
+          <div class="skill-group">
+            <h3>Desarrollo web</h3>
+            <ul class="skills">
+              <li>
+                <span class="s-name">HTML</span>
+                <span class="s-desc">Estructura semántica de páginas y sitios.</span>
+                <ul class="tags">
+                  <li>AcademyMap</li>
+                  <li>Green Link</li>
+                </ul>
+              </li>
+              <li>
+                <span class="s-name">CSS</span>
+                <span class="s-desc">Maquetación responsiva y diseño de interfaces.</span>
+                <ul class="tags">
+                  <li>AcademyMap</li>
+                  <li>Green Link</li>
+                </ul>
+              </li>
+              <li>
+                <span class="s-name">JavaScript</span>
+                <span class="s-desc">Interactividad y lógica en el navegador.</span>
+                <ul class="tags">
+                  <li>AcademyMap</li>
+                </ul>
+              </li>
+              <!-- AGREGA MÁS: copia un bloque <li>…</li> y cambia el texto -->
+            </ul>
           </div>
-        </article>
-        <article class="step">
-          <div class="when">Actualidad / Feria TP</div>
-          <div>
-            <h3>Innovación y Robótica Aplicada (Proyecto GutenVox)</h3>
-            <p>Desarrollo técnico de un robot de lectura, traducción automática y asistencia audible basado en Raspberry Pi, Python, OCR y APIs en la nube.</p>
-            <ul class="tags"><li>Python</li><li>OCR</li><li>Raspberry Pi</li><li>APIs en la nube</li></ul>
+
+          <div class="skill-group">
+            <h3>Programación y robótica</h3>
+            <ul class="skills">
+              <li>
+                <span class="s-name">Python</span>
+                <span class="s-desc">Lógica del robot: lectura de texto, traducción y audio.</span>
+                <ul class="tags">
+                  <li>GutenVox</li>
+                </ul>
+              </li>
+              <li>
+                <span class="s-name">OCR</span>
+                <span class="s-desc">Reconocimiento de texto en documentos impresos.</span>
+                <ul class="tags">
+                  <li>GutenVox</li>
+                </ul>
+              </li>
+              <li>
+                <span class="s-name">Raspberry Pi</span>
+                <span class="s-desc">Computador de placa única que controla el robot.</span>
+                <ul class="tags">
+                  <li>GutenVox</li>
+                </ul>
+              </li>
+              <li>
+                <span class="s-name">APIs en la nube</span>
+                <span class="s-desc">Traducción automática con DeepL API.</span>
+                <ul class="tags">
+                  <li>GutenVox</li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </article>
-        <!--
+
+          <div class="skill-group">
+            <h3>Herramientas</h3>
+            <ul class="skills">
+              <li>
+                <span class="s-name">GitHub</span>
+                <span class="s-desc">Repositorio y versiones del proyecto GutenVox.</span>
+                <ul class="tags">
+                  <li>GutenVox</li>
+                </ul>
+              </li>
+              <li>
+                <span class="s-name">Visual Studio Code</span>
+                <span class="s-desc">Editor que uso para desarrollar mis proyectos.</span>
+                <ul class="tags">
+                  <li>Uso diario</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Siguiente objetivo</h3>
+            <ul class="skills">
+              <li>
+                <span class="s-name">Robótica y automatización</span>
+                <span class="s-desc">Llevar mis ideas al mundo físico y automatizar procesos.</span>
+                <ul class="tags">
+                  <li>En aprendizaje</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAYECTORIA -->
+    <section id="trayectoria">
+      <div class="wrap">
+        <p class="eyebrow">Trayectoria</p>
+        <h2>Mi camino en la programación</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="when">Inicios</div>
+            <div>
+              <h3>Fundamentos de Programación y Desarrollo Web</h3>
+              <p>Aprendizaje de HTML, CSS puro, maquetación responsiva.</p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Diseño responsivo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="step">
+            <div class="when">Fase de crecimiento</div>
+            <div>
+              <h3>Desarrollo de Soluciones Web (AcademyMap y Green Link)</h3>
+              <p>Creación de interfaces interactivas orientadas a resolver problemáticas reales: orientación vocacional
+                para estudiantes de enseñanza media y gestión comunitaria de reciclaje en Santiago.</p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>Interfaces interactivas</li>
+                <li>Resolución de problemas reales</li>
+              </ul>
+            </div>
+          </article>
+          <article class="step">
+            <div class="when">Actualidad / Feria TP</div>
+            <div>
+              <h3>Innovación y Robótica Aplicada (Proyecto GutenVox)</h3>
+              <p>Desarrollo técnico de un robot de lectura, traducción automática y asistencia audible basado en
+                Raspberry Pi, Python, OCR y APIs en la nube.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>OCR</li>
+                <li>Raspberry Pi</li>
+                <li>APIs en la nube</li>
+              </ul>
+            </div>
+          </article>
+          <!--
           AGREGAR OTRA ETAPA: copia un bloque <article class="step">…</article> completo.
           En <div class="when"> puedes poner el año, por ejemplo: 2024 – 2025
         -->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FORMACIÓN -->
-  <section class="alt" id="formacion">
-    <div class="wrap">
-      <p class="eyebrow">Formación</p>
-      <h2>Estudios, cursos y certificaciones</h2>
-      <div class="duo">
-        <div class="panel">
-          <h3>Educación</h3>
+    <!-- FORMACIÓN -->
+    <section class="alt" id="formacion">
+      <div class="wrap">
+        <p class="eyebrow">Formación</p>
+        <h2>Estudios, cursos y certificaciones</h2>
+        <div class="duo">
+          <div class="panel">
+            <h3>Educación</h3>
             <h4>Liceo Vate Vicente Huidobro</h4>
             <p class="meta">2023 – 2026</p>
             <p>Estudie la especialidad de Programacion</p>
-          </article>
-        </div>
-        <div class="panel">
-          <h3>Cursos y certificaciones</h3>
+            </article>
+          </div>
+          <div class="panel">
+            <h3>Cursos y certificaciones</h3>
             <h4>Curso 4°C y certificado de Full Stack Python</h4>
             <p class="meta">Liceo · 2026</p>
-            <p>lo que aprendi fui programar mis propios sitios web y diseñarlos a la 
-              manera que a mi me guste y crear mis propias ideas de sitios web o ir probando 
+            <p>lo que aprendi fui programar mis propios sitios web y diseñarlos a la
+              manera que a mi me guste y crear mis propias ideas de sitios web o ir probando
               cosas nuevas, nuevos lenguajes cosas asi
             </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <div class="wrap">
+        <p class="eyebrow">Proyectos</p>
+        <h2>Mis proyectos destacados</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="images/academymap.jpg" alt="Logo de AcademyMap: una brújula blanca sobre fondo violeta"
+              width="396" height="264">
+            <div class="body">
+              <h3>AcademyMap</h3>
+              <p class="desc">Plataforma web interactiva con un sistema de quest diseñada para orientar a estudiantes de
+                octavo básico y primero medio.</p>
+              <ul class="tags">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Quest educativo</li>
+              </ul>
+              <button class="more" type="button" data-proyecto="academymap" aria-haspopup="dialog">Más
+                información</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/greenlink.jpg"
+              alt="Logo de Green Link: un globo terráqueo rodeado de flechas verdes de reciclaje" width="396"
+              height="264">
+            <div class="body">
+              <h3>Green Link</h3>
+              <p class="desc">Sitio web interactivo enfocado en mostrar de forma visual y accesible los puntos verdes de
+                reciclaje en Santiago.</p>
+              <ul class="tags">
+                <li>Frontend</li>
+                <li>Sustentabilidad</li>
+                <li>Santiago</li>
+              </ul>
+              <button class="more" type="button" data-proyecto="greenlink" aria-haspopup="dialog">Más
+                información</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/gutenvox.jpg"
+              alt="Logo de GutenVox: un libro dentro de un cubo con ícono de traducción y sonido" width="396"
+              height="264">
+            <div class="body">
+              <h3>GutenVox (Robot de Lectura)</h3>
+              <p class="desc">Robot de asistencia accesible (ODS 4 y 10) que escanea textos impresos, los traduce
+                mediante DeepL API y los lee en voz alta.</p>
+              <ul class="tags">
+                <li>Python / OCR</li>
+                <li>Raspberry Pi</li>
+                <li>DeepL API</li>
+              </ul>
+              <button class="more" type="button" data-proyecto="gutenvox" aria-haspopup="dialog">Más
+                información</button>
+              <div class="links">
+                <a href="#" rel="noopener">Sitio web</a>
+                <a href="#" rel="noopener">GitHub Beta</a>
+              </div>
+            </div>
           </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROYECTOS -->
-  <section id="proyectos">
-    <div class="wrap">
-      <p class="eyebrow">Proyectos</p>
-      <h2>Mis proyectos destacados</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="images/academymap.jpg" alt="Logo de AcademyMap: una brújula blanca sobre fondo violeta" width="396" height="264">
-          <div class="body">
-            <h3>AcademyMap</h3>
-            <p class="desc">Plataforma web interactiva con un sistema de quest diseñada para orientar a estudiantes de octavo básico y primero medio.</p>
-            <ul class="tags"><li>HTML/CSS</li><li>JavaScript</li><li>Quest educativo</li></ul>
-            <button class="more" type="button" data-proyecto="academymap" aria-haspopup="dialog">Más información</button>
-          </div>
-        </article>
+    <!-- CONTACTO -->
+    <section class="alt contact" id="contacto">
+      <div class="wrap">
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Trabajamos juntos?</h2>
+        <p>Estoy abierto a oportunidades laborales en desarrollo web. Si tienes una consulta sobre mis proyectos o
+          quieres colaborar, escríbeme.</p>
+        <ul class="canales">
+          <li><span>Correo</span><a
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=benjamintroncoso17gg@gmail.com&amp;su=Contacto%20desde%20tu%20portafolio"
+              target="_blank" rel="noopener">benjamintroncoso17gg@gmail.com</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/benjamin-troncoso-42978a3b9" target="_blank"
+              rel="noopener">linkedin.com/in/benjamin-troncoso-42978a3b9</a></li>
+          <li><span>GitHub</span><a href="https://github.com/benjaminquepasa" target="_blank"
+              rel="noopener">github.com/benjaminquepasa</a></li>
+        </ul>
+        <div class="btns centrado">
+          <a class="btn"
+            href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=benjamintroncoso17gg@gmail.com&amp;su=Contacto%20desde%20tu%20portafolio"
+            target="_blank" rel="noopener">Enviar correo</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <article class="card">
-          <img src="images/greenlink.jpg" alt="Logo de Green Link: un globo terráqueo rodeado de flechas verdes de reciclaje" width="396" height="264">
-          <div class="body">
-            <h3>Green Link</h3>
-            <p class="desc">Sitio web interactivo enfocado en mostrar de forma visual y accesible los puntos verdes de reciclaje en Santiago.</p>
-            <ul class="tags"><li>Frontend</li><li>Sustentabilidad</li><li>Santiago</li></ul>
-            <button class="more" type="button" data-proyecto="greenlink" aria-haspopup="dialog">Más información</button>
-          </div>
-        </article>
+  <footer>© 2026 Benjamin Troncoso. Todos los derechos reservados.</footer>
 
-        <article class="card">
-          <img src="images/gutenvox.jpg" alt="Logo de GutenVox: un libro dentro de un cubo con ícono de traducción y sonido" width="396" height="264">
-          <div class="body">
-            <h3>GutenVox (Robot de Lectura)</h3>
-            <p class="desc">Robot de asistencia accesible (ODS 4 y 10) que escanea textos impresos, los traduce mediante DeepL API y los lee en voz alta.</p>
-            <ul class="tags"><li>Python / OCR</li><li>Raspberry Pi</li><li>DeepL API</li></ul>
-            <button class="more" type="button" data-proyecto="gutenvox" aria-haspopup="dialog">Más información</button>
-            <div class="links">
-              <a href="#" rel="noopener">Sitio web</a>
-              <a href="#" rel="noopener">GitHub Beta</a>
-            </div>
-          </div>
-        </article>
+  <dialog class="modal" id="modal" aria-labelledby="modal-titulo">
+    <div class="modal-panel">
+      <button class="modal-close" id="modal-cerrar" type="button" aria-label="Cerrar ventana">&times;</button>
+      <div class="modal-grid">
+        <img class="modal-img" id="modal-img" src="" alt="">
+        <div class="modal-body">
+          <p class="eyebrow" id="modal-etiqueta"></p>
+          <h3 id="modal-titulo"></h3>
+          <div id="modal-secciones"></div>
+          <h4>Tecnologías</h4>
+          <ul class="tags" id="modal-tags"></ul>
+          <div class="links" id="modal-links"></div>
+        </div>
       </div>
     </div>
-  </section>
+  </dialog>
 
-  <!-- CONTACTO -->
-  <section class="alt contact" id="contacto">
-    <div class="wrap">
-      <p class="eyebrow">Contacto</p>
-      <h2>¿Trabajamos juntos?</h2>
-      <p>Estoy abierto a oportunidades laborales en desarrollo web. Si tienes una consulta sobre mis proyectos o quieres colaborar, escríbeme.</p>
-      <ul class="canales">
-        <li><span>Correo</span><a href="mailto:tu-correo@ejemplo.com">benjamintroncoso17gg@gmail.com</a></li>
-        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/benjamin-troncoso-42978a3b9" target="_blank" rel="noopener">linkedin.com/in/benjamin-troncoso-42978a3b9</a></li>
-        <li><span>GitHub</span><a href="https://github.com/benjaminquepasa" target="_blank" rel="noopener">github.com/benjaminquepasa</a></li>
-      </ul>
-      <div class="btns centrado">
-        <a class="btn" href="mailto:tu-correo@ejemplo.com">Enviar correo</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>© 2026 Benjamin Troncoso. Todos los derechos reservados.</footer>
-
-<dialog class="modal" id="modal" aria-labelledby="modal-titulo">
-  <div class="modal-panel">
-    <button class="modal-close" id="modal-cerrar" type="button" aria-label="Cerrar ventana">&times;</button>
-    <div class="modal-grid">
-      <img class="modal-img" id="modal-img" src="" alt="">
-      <div class="modal-body">
-        <p class="eyebrow" id="modal-etiqueta"></p>
-        <h3 id="modal-titulo"></h3>
-        <div id="modal-secciones"></div>
-        <h4>Tecnologías</h4>
-        <ul class="tags" id="modal-tags"></ul>
-        <div class="links" id="modal-links"></div>
-      </div>
-    </div>
-  </div>
-</dialog>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
